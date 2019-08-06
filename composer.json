@@ -1,0 +1,23 @@
+{
+  "name": "onkeltem/yaml-elc",
+  "version": "0.1",
+  "description": "Datamincer: Yaml Enhanced List Comprehension",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Artiom Neganov",
+      "email": "aneganov@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "type": "library",
+  "prefer-stable": true,
+  "require": {
+    "symfony/yaml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "YamlElc\\": "src/"
+    }
+  }
+}
