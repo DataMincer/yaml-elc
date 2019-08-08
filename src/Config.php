@@ -44,7 +44,12 @@ class Config {
   }
 
   public function generate() {
-    return $this->generateDimensionTuples($this->dimensions);
+    if (count($this->dimensions) > 0) {
+      return $this->generateDimensionTuples($this->dimensions);
+    }
+    else {
+      return [[]];
+    }
   }
 
   public function render($tuple) {
