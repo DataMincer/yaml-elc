@@ -14,7 +14,7 @@ abstract class YamlElc {
    * @return NULL|Config
    */
   public static function parse(array $data, Config $config = NULL) {
-    $config = $config ?: new Config();
+    $config = $config ? clone $config : new Config();
     $dimensions = static::parseDimensions($data, $config->getDimensions());
     $properties = static::parseProperties($data, $dimensions);
     $config->setDimensions($dimensions);
